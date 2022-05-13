@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países Por Aí</title>
+</head>
+<body>
+    <h1>Onde Você Mora??</h1>
+    Fale seu país input: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verpais()">
+    <div id="res"></div>
+    <script>
+        function verpais() {
+            var pais = document.getElementById("txtpais")
+            if(pais == 'Brasil'){
+                res.innerHTML = `<p>Seu país é o <strong>${pais}</strong>, logo vc é Brasileiro</p>`
+            }else{
+                res.innerHTML = `<p>Seu país é o(s) <strong>${pais}</strong>, logo vc é Gringo</p>`
+            }
+        }
+    </script>
+</body>
+</html>
